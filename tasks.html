@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h1>Welcome, <span id="username"></span>!</h1>
+
+        <div class="name-input">
+            <label for="nameInput">Enter your name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name" />
+        </div>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a new task" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-section">
+            <div class="task-box" id="pendingTasksBox">
+                <h2>Pending Tasks</h2>
+                <div id="pendingTasksList"></div>
+            </div>
+
+            <div class="task-box" id="completedTasksBox">
+                <h2>Completed Tasks</h2>
+                <div id="completedTasksList"></div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <label>Task Progress:</label>
+            <progress id="taskProgress" value="0" max="100"></progress>
+        </div>
+
+        <div class="theme-toggle">
+            <button id="themeToggleButton" onclick="toggleTheme()">Light Mode</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

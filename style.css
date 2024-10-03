@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.light-mode .container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #005f5f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004040;
+}
+
+.task-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task-box {
+    width: 48%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.light-mode .task-box {
+    background-color: #f0f0f0;
+}
+
+.task-box h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: black;
+    align-items: center;
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.theme-toggle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    background-color: #005f5f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-toggle button:hover {
+    background-color: #004040;
+}
+
+.name-input {
+    margin-bottom: 20px;
+}
+
+.name-input input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
